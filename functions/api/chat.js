@@ -61,7 +61,7 @@ export async function onRequestPost(context) {
 
   // Model Groq yang tersedia (contoh lain: "llama-3.1-8b-instant" untuk lebih cepat/murah,
   // "mixtral-8x7b-32768" untuk konteks panjang). Cek daftar terbaru di console.groq.com.
-  const model = env.GROQ_MODEL || "llama-3.3-70b-versatile";
+  const model = env.GROQ_MODEL || "openai/gpt-oss-120b";
   const url = "https://api.groq.com/openai/v1/chat/completions";
 
   // ---- Susun riwayat percakapan (memory) ----
